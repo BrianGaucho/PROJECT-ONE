@@ -1,0 +1,510 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Black+Ops+One&family=Bungee&family=Great+Vibes&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Marker+Hatch&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --btw:#1f1Af4;
+    --box:rgb(205, 209, 194);
+
+}
+                                                    /* home content */
+.landing-page{
+    background-image: url(../images/landing\ page.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:120vh;
+    width:100%;
+
+}
+.home-title{
+    margin-top: 17rem;
+    height: 4rem;
+}
+.home-title h1{
+    font-family: 'black ops one';
+    font-size: 2.5rem;
+}
+.home-title span{
+    color: var(--btw);
+}
+                                                        /* end home content */
+
+
+
+/* home media query */
+
+@media screen and (max-width:728px){
+.home-title h1 {
+    font-size: 2rem;
+    
+}
+.home-title{
+    margin-top: 14rem;
+}
+}
+/* end home media query */
+/* start strategy 1 area */
+.company-title span,
+.choose-title span,
+.about-title span,
+.portfolio-title span{
+    color: var(--btw);
+}
+
+.text-capitalised{
+    position: relative;
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: 'poppins';
+    color: #000000;
+}
+.text-capitalised::before{
+    content: '';
+    display: block;
+    width: 23px;
+    height: 2px;
+    position: absolute;
+    background-color: #000000;
+    top: 50%;
+    left: 36%;
+}
+.text-capitalised::after{
+    content: '';
+    display: block;
+    width: 23px;
+    height: 2px;
+    position: absolute;
+    background-color: #000000;
+    top: 50%;
+    right: 36%;
+}
+.company-desc{
+    width: 70%;
+}
+.company-desc p{
+    font-size: 1.3rem;
+    color: black;
+    font-family: 'san serif';
+}
+
+
+
+/* strategy1 media query */
+@media screen and (max-width:416px){
+  .company-title h5{
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width:999px),(max-width:1150px){
+    .text-capitalised::before{
+        left: 25%;
+        position: absolute;
+    }
+    .text-capitalised::after{
+        right: 25%;
+        position: absolute; 
+    }
+}
+@media screen and (max-width:479px),(max-width:728px){
+    .text-capitalised::before{
+        left: 15%;
+        position: absolute;
+    }
+    .text-capitalised::after{
+        right: 15%;
+        position: absolute; 
+    }
+
+}
+
+/* why choose us area */
+
+/* strategy2 area*/
+.company2{
+    background-color: var(--box);
+    width: 100%;
+    border-radius: 31px;
+    margin-top: 2rem;
+}
+.text2-capitalised {
+    position: relative;
+    font-size: 1.5rem;
+    font-family: 'poppins';
+    font-weight: 600;
+    color: #000000;
+}
+.text2-capitalised::before{
+    content: '';
+    display: block;
+    width: 23px;
+    height: 2px;
+    position: absolute;
+    background-color: #000000;
+    top: 50%;
+    left: 39%;
+}
+.text2-capitalised::after{
+    content: '';
+    display: block;
+    width: 23px;
+    height: 2px;
+    position: absolute;
+    background-color: #000000;
+    top: 50%;
+    right: 39%;
+}
+
+
+.area-card,
+.portfolio-card{
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+    grid-gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    padding:1rem;
+    margin:auto;
+}
+.box{
+    position: relative;
+    width: 18rem;
+    height: 20rem;
+    background-color: black;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.box .box-img img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+.intro{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: aliceblue;
+    transform: scale(0);
+    transition:.3 ease;
+}
+.box:hover .intro{
+     transform: scale(1);
+}
+
+/* end why choose us area */
+ /* why choose us media query   */
+ @media screen and (max-width:416px){
+    .choose-title h5{
+      font-size: 0.9rem;
+    }
+  }
+@media screen and (max-width:728px),(max-width:411px){
+    .text2-capitalised::before{
+        left: 12%;
+        position: absolute;
+    }
+    .text2-capitalised::after{
+        right: 12%;
+        position: absolute;
+    }
+
+}
+@media screen and (max-width:999px),(max-width:1150px){
+    .text2-capitalised::before{
+        left: 21%;
+    }
+    .text2-capitalised::after{
+        right: 21%;
+    }
+
+}
+@media screen and (max-width:800px){
+    .area-card{
+        grid-template-columns: repeat(2,1fr);
+        padding: 2rem 50px;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+}
+@media screen and (max-width:728px){
+    .area-card{
+        grid-template-columns:1fr;
+        width: 100%;
+        padding: 2rem 70px;
+
+    }
+    .area-card .box{
+        padding-inline: calc(50%);
+        justify-content: center;
+        align-items: center;
+    }
+}
+ 
+ /* end why choose us media query area */
+/* end strategy 2 area */
+
+/* start about area */
+.about-title h2{
+    font-size: 3.5rem;
+    font-weight: 650;
+}
+.about-exp{
+    width: 88%;
+    }
+.about-exp p{
+    font-size: 1.3rem;
+    font-family: 'san serif';
+}
+
+.profile{
+    margin-left:1rem;
+    margin-top: 1rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+.about-image{
+    display: grid;
+    grid-template-columns: repeat(2 ,1fr);
+    grid-gap: 4rem;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;  
+}
+.image{
+    position: relative;
+    width: 18rem;
+    height: 24rem;
+    background-color: #000000;
+    margin-left: 3rem;
+}
+.image .profile{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.image .profile img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 0px 40px 0px 40px;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+@media screen and (max-width:800px){
+    .about-image{
+        grid-template-columns:(2,1fr);
+        padding: 1rem 50px;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+}
+@media screen and (max-width:720px){
+    .about-image{
+        grid-template-columns:1fr;
+        padding: 1rem 50px;
+        width: 100%;
+    }
+    .about-image .image{
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+
+/* end about area */
+
+/* start portfolio area */
+
+.portfolio{
+    background-color: var(--box);
+    margin-top: 6rem;
+}
+.portfolio-title h1{
+    font-weight:730;
+    font-size: 3.7rem;
+    color: #000000;
+}
+.portfolio-box{
+    position: relative;
+    width: 18rem;
+    height: 20rem;
+}
+.portfolio-box .box-img img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  
+    transition: 0.5s;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+.portfolio .img-box img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+    margin-top: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    
+    
+}
+.description{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:rgb(43, 43, 43,0.5);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    transform: scale(0);
+    transition:.3 ease;
+}
+.description p{
+    margin-top: 8rem;
+    font-weight: 600;
+    font-size: 20px;
+}
+.portfolio-box:hover .description{
+     transform: scale(1);
+}
+/* portfolio media query */
+
+@media screen and (max-width:800px){
+    .portfolio-card{
+        grid-template-columns:(2,1fr);
+        padding: 1rem 50px;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+}
+@media screen and (max-width:720px){
+    .portfolio-card{
+        grid-template-columns:1fr;
+        padding: 1rem 50px;
+        width: 100%;
+    }
+    .portfolio-card .portfolio-box{
+        justify-content: center;
+        align-items: center;
+        padding-inline: calc(50%);
+    }
+    .portfolio-box .box-img img,
+    .description{
+        margin-top:2rem;
+    }
+}
+
+/* portfolio end media query */
+
+
+/* end portfolio area */
+
+
+/* start footer area */
+
+.footer{
+    background-color:#1f1Af4;
+    padding: 23px 0;
+}
+.last{
+    margin: auto;
+}
+.footer ul{
+    list-style: none;
+}
+.link-title h5{
+    font-weight: 700;
+    color: #000;
+
+}
+.alignment{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    justify-content: center;
+    align-items: center;
+    grid-gap: 4rem;
+}
+.link-area{
+    margin-top:2.2rem;
+}
+.footer-col{
+   
+    margin-bottom: 3rem;
+}
+.contact-title h5{
+    color: #000000;
+    font-weight: 700;
+}
+.contact-title span,
+.link-area span{
+    color: aliceblue;
+}
+.footer-col ul li a{
+    text-decoration: none;
+    color: #000000;
+    font-weight: 630;
+    font-size: 18px;
+    
+}
+.footer-col ul li {
+    padding:0 0 7px;
+    
+}
+.footer-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 25px;
+    transition: all 0.4s ease;
+
+}
+
+/* footer media query */
+
+
+/* end footer media query */
+
+@media (max-width:800px){
+    .alignment{
+        grid-template-columns:(2,1fr);
+        padding: 1rem 50px;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+}
+@media (max-width:728px){
+    .alignment{
+        grid-template-columns:1fr;
+        padding: 1rem 50px;
+        width: 100%;
+    }
+}
+
+/* end footer area */
