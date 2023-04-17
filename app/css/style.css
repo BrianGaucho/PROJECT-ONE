@@ -33,18 +33,6 @@
 
 
 
-/* home media query */
-
-@media screen and (max-width:728px){
-.home-title h1 {
-    font-size: 2rem;
-    
-}
-.home-title{
-    margin-top: 14rem;
-}
-}
-/* end home media query */
 /* start strategy 1 area */
 .company-title span,
 .choose-title span,
@@ -91,33 +79,6 @@
 
 
 
-/* strategy1 media query */
-@media screen and (max-width:416px){
-  .company-title h5{
-    font-size: 1rem;
-  }
-}
-@media screen and (max-width:999px),(max-width:1150px){
-    .text-capitalised::before{
-        left: 25%;
-        position: absolute;
-    }
-    .text-capitalised::after{
-        right: 25%;
-        position: absolute; 
-    }
-}
-@media screen and (max-width:479px),(max-width:728px){
-    .text-capitalised::before{
-        left: 15%;
-        position: absolute;
-    }
-    .text-capitalised::after{
-        right: 15%;
-        position: absolute; 
-    }
-
-}
 
 /* why choose us area */
 
@@ -202,56 +163,7 @@
 }
 
 /* end why choose us area */
- /* why choose us media query   */
- @media screen and (max-width:416px){
-    .choose-title h5{
-      font-size: 0.9rem;
-    }
-  }
-@media screen and (max-width:728px),(max-width:411px){
-    .text2-capitalised::before{
-        left: 12%;
-        position: absolute;
-    }
-    .text2-capitalised::after{
-        right: 12%;
-        position: absolute;
-    }
-
-}
-@media screen and (max-width:999px),(max-width:1150px){
-    .text2-capitalised::before{
-        left: 21%;
-    }
-    .text2-capitalised::after{
-        right: 21%;
-    }
-
-}
-@media screen and (max-width:800px){
-    .area-card{
-        grid-template-columns: repeat(2,1fr);
-        padding: 2rem 50px;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-    }
-}
-@media screen and (max-width:728px){
-    .area-card{
-        grid-template-columns:1fr;
-        width: 100%;
-        padding: 2rem 70px;
-
-    }
-    .area-card .box{
-        padding-inline: calc(50%);
-        justify-content: center;
-        align-items: center;
-    }
-}
  
- /* end why choose us media query area */
 /* end strategy 2 area */
 
 /* start about area */
@@ -490,6 +402,100 @@
 }
 
 /* footer media query */
+
+
+/* home media query */
+
+@media screen and (max-width:728px){
+    .home-title h1 {
+        font-size: 2rem;
+        
+    }
+    .home-title{
+        margin-top: 14rem;
+    }
+    }
+    /* end home media query */
+
+    /* strategy1 media query */
+@media screen and (max-width:416px){
+    .company-title h5{
+      font-size: 1rem;
+    }
+  }
+  @media screen and (max-width:999px),(max-width:1150px){
+      .text-capitalised::before{
+          left: 25%;
+          position: absolute;
+      }
+      .text-capitalised::after{
+          right: 25%;
+          position: absolute; 
+      }
+  }
+  @media screen and (max-width:479px),(max-width:728px){
+      .text-capitalised::before{
+          left: 15%;
+          position: absolute;
+      }
+      .text-capitalised::after{
+          right: 15%;
+          position: absolute; 
+      }
+  
+  }
+
+  /* why choose us media query   */
+ @media screen and (max-width:416px){
+    .choose-title h5{
+      font-size: 0.9rem;
+    }
+  }
+@media screen and (max-width:728px),(max-width:411px){
+    .text2-capitalised::before{
+        left: 12%;
+        position: absolute;
+    }
+    .text2-capitalised::after{
+        right: 12%;
+        position: absolute;
+    }
+
+}
+@media screen and (max-width:999px),(max-width:1150px){
+    .text2-capitalised::before{
+        left: 21%;
+    }
+    .text2-capitalised::after{
+        right: 21%;
+    }
+
+}
+@media screen and (max-width:800px){
+    .area-card{
+        grid-template-columns: repeat(2,1fr);
+        padding: 2rem 50px;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+}
+@media screen and (max-width:728px){
+    .area-card{
+        grid-template-columns:1fr;
+        width: 100%;
+        padding: 2rem 70px;
+
+    }
+    .area-card .box{
+        padding-inline: calc(50%);
+        justify-content: center;
+        align-items: center;
+    }
+}
+ 
+ /* end why choose us media query area */
+  
 
 
 /* end footer media query */
