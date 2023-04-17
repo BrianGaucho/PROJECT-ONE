@@ -431,8 +431,12 @@
 /* start footer area */
 
 .footer{
-    background-color:#1f1Af4;
-    padding: 23px 0;
+    background-color:#585764a1;
+    /* padding: 23px 0; */
+    height: 15rem;
+}
+.flogo{
+    object-fit: cover;
 }
 .last{
     margin: auto;
