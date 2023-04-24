@@ -541,6 +541,9 @@
         align-items: center;
         width: 100%;
     }
+    .footer-col{
+        align-items: center;
+    }
 }
 @media (max-width:728px){
     .alignment{
@@ -548,9 +551,9 @@
         padding: 1rem 50px;
         width: 100%;
     }
-    .footer-logo pt-4{
-        height: 170rem;
-        width: 370rem;
+    .footer-logo{
+        height: 150rem;
+        width: 350rem;
     }
     .footer-col{
         align-items: center;
