@@ -552,8 +552,7 @@
         width: 100%;
     }
     .footer-logo{
-        height: 150rem;
-        width: 350rem;
+        flex-wrap: wrap;
     }
     .footer-col{
         align-items: center;
