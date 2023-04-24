@@ -11,7 +11,7 @@
 }
                                                     /* home content */
 .landing-page{
-    background-image: url(../images/landing\ page.jpg);
+    background-image: url(../images/blake-connally-B3l0g6HLxr8-unsplash.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height:120vh;
@@ -23,12 +23,20 @@
     height: 4rem;
 }
 .home-title h1{
+    color: aliceblue;
     font-family: 'black ops one';
     font-size: 2.5rem;
 }
 .home-title span{
     color: var(--btw);
 }
+
+#navbarNav a:hover{
+    font-weight: bold;
+    transition: .4s;
+}
+
+
                                                         /* end home content */
 
 
@@ -200,7 +208,8 @@
     width: 18rem;
     height: 24rem;
     background-color: #000000;
-    margin-left: 3rem;
+    /* margin-left: 3rem; */
+    /* object-fit: cover; */
 }
 .image .profile{
     position: absolute;
@@ -215,9 +224,10 @@
     left: 0;
     width: 100%;
     height: 100%;
-    border-radius: 0px 40px 0px 40px;
-    object-fit: cover;
+    border-radius: 0px 30px 0px 30px;
+    /* object-fit: fill; */
     transition: 0.5s;
+    object-fit: cover;
 }
 
 @media screen and (max-width:800px){
@@ -345,7 +355,7 @@
 .footer{
     background-color:#585764a1;
     /* padding: 23px 0; */
-    height: 15rem;
+    /* height: 15rem; */
 }
 .flogo{
     object-fit: cover;
@@ -371,10 +381,11 @@
 .link-area{
     margin-top:2.2rem;
 }
+
 .footer-col{
-   
     margin-bottom: 3rem;
 }
+
 .contact-title h5{
     color: #000000;
     font-weight: 700;
@@ -382,6 +393,27 @@
 .contact-title span,
 .link-area span{
     color: aliceblue;
+}
+
+.footer-col{
+    display: flex;
+    flex-direction: column;
+    /* margin-left: 20px; */
+}
+
+.footer-col .icons{
+    font-size: 20px;
+}
+
+.footer-col .icons a{
+    color:  #222e50;
+    margin-left: 20px;
+}
+
+.footer-col .icons a:hover{
+    /* color: #fccb06; */
+    /* font-size: 19.5px; */
+    color: #000;
 }
 .footer-col ul li a{
     text-decoration: none;
@@ -395,9 +427,10 @@
     
 }
 .footer-col ul li a:hover{
-    color: #ffffff;
-    padding-left: 25px;
+    /* color: #ffffff; */
+    padding-left: 1px;
     transition: all 0.4s ease;
+    font-weight: bold;
 
 }
 
