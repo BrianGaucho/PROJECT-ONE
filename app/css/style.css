@@ -370,6 +370,17 @@
 }
 .flogo{
     object-fit: cover;
+
+}
+.links{
+    text-decoration: none;
+    cursor: pointer;
+    transition: all ease-in-out .7s;
+    color: #222e50;
+}
+.links:hover{
+    text-decoration: underline;
+    padding-left: 7px;
 }
 .last{
     margin: auto;
